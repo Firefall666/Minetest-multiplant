@@ -16,12 +16,14 @@ else
 	})
 end
 
---minetest.register_craft({
---    type="cooking",
---    output = "multiplant:seed_multiplant",
---    recipe='group:seed',
---    cooktime=4,
---})
+minetest.register_craft({
+   type="shapeless",
+   output = "multiplant:seed_multiplant",
+   recipe=({
+		'group:seed','group:seed','group:seed'
+		}),
+   
+})
 
 minetest.register_craft({
 	output="default:diamond",
