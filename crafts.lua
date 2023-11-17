@@ -4,7 +4,7 @@ if (minetest.get_modpath("mesecons")) then --if Mesecons is active, recipe is al
 	type="shapeless",
 	output="multiplant:seed_multiplant",
 	recipe=({
-		'group:sapling'
+		'group:sapling','group:sapling','group:sapling'
 		})
 	})
 else
@@ -16,12 +16,12 @@ else
 	})
 end
 
-minetest.register_craft({
-    type="cooking",
-    output = "multiplant:seed_multiplant",
-    recipe='group:seed',
-    cooktime=4,
-})
+--minetest.register_craft({
+--    type="cooking",
+--    output = "multiplant:seed_multiplant",
+--    recipe='group:seed',
+--    cooktime=4,
+--})
 
 minetest.register_craft({
 	output="default:diamond",
