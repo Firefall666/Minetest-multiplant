@@ -1,35 +1,27 @@
---Kochen:
-if (minetest.get_modpath("mesecons")) then --if Mesecons is active, recipe is already used, so change it to a craft
+
 	minetest.register_craft({
-	type="shapeless",
 	output="multiplant:seed_multiplant",
-	recipe=({
-		'group:sapling','group:sapling','group:sapling'
-		})
+	recipe=(
+		{"default:dirt","group:leaves", "default:dirt"},
+		{"group:leaves", "default:mese", "group:leaves"},
+		{"default:dirt", "group:leaves", "default:dirt"},
+		)
 	})
-else
-	minetest.register_craft({
-		type="cooking",
-		output = "multiplant:seed_multiplant",
-		recipe='group:sapling',
-		cooktime=4,
-	})
-end
 
-minetest.register_craft({
-   type="shapeless",
-   output = "multiplant:seed_multiplant",
-   recipe=({
-		'group:seed','group:seed','group:seed'
-		}),
-   
-})
+--minetest.register_craft({
+--   type="shapeless",
+--   output = "multiplant:seed_multiplant",
+--   recipe=({
+--		'group:seed','group:seed','group:seed'
+--		}),
+--   
+--})
 
-minetest.register_craft({
-	output="default:diamond",
-	recipe = {
-        {"", "default:coalblock", ""},
-        {"default:coalblock", "default:coalblock", "default:coalblock"},
-        {"", "default:coalblock", ""}, }
-    
-})
+--minetest.register_craft({
+--	output="default:diamond",
+--	recipe = {
+--      {"", "default:coalblock", ""},
+--        {"default:coalblock", "default:coalblock", "default:coalblock"},
+--        {"", "default:coalblock", ""}, }
+--    
+--})
