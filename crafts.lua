@@ -3,7 +3,7 @@
 	output="multiplant:seed_multiplant",
 	recipe=(
 		{"default:dirt","group:leaves", "default:dirt"},
-		{"group:leaves", "default:mese", "group:leaves"},
+		{"group:leaves", "default:mese_crystal", "group:leaves"},
 		{"default:dirt", "group:leaves", "default:dirt"},
 		)
 	})
