@@ -28,7 +28,7 @@ if minetest.settings:get_bool("multiplant_enable_grow_on_wet_soil") ~= false the
 	minetest.register_abm({
 		nodenames = {"group:field"},
 		neighbors = {"air"},
-		interval = 50,
+		interval = 150,
 		chance = 90,
 		catch_up = false,
 
