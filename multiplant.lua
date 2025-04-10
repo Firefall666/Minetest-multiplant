@@ -41,7 +41,7 @@ if minetest.settings:get_bool("multiplant_enable_grow_on_wet_soil") ~= false the
 			pos.y = pos.y + 1
 
 			if minetest.get_node(pos).name == "air" then
-				minetest.set_node(pos, {name = "multiplant:seed_multiplant"})
+				minetest.set_node(pos, {name = "multiplant:seed_multiplant", param2=1})
 			end
 		end
 	})
