@@ -7,7 +7,7 @@ farming.register_plant("multiplant:multiplant", {
 	minlight = 5,
 	maxlight = default.LIGHT_MAX,
 	fertility = {"grassland"},
-	groups = {multiplant = 1, flammable = 4, growing=1},
+	groups = {handy= 1, multiplant = 1, flammable = 4, growing=1},
 	place_param2 = 3,
 })
 
