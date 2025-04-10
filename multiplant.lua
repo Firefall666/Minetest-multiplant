@@ -29,7 +29,7 @@ if minetest.settings:get_bool("multiplant_enable_grow_on_wet_soil") ~= false the
 		nodenames = {"group:field"},
 		neighbors = {"air"},
 		interval = 50,
-		chance = 7,
+		chance = 90,
 		catch_up = false,
 
 		action = function(pos, node)
@@ -41,7 +41,7 @@ if minetest.settings:get_bool("multiplant_enable_grow_on_wet_soil") ~= false the
 			pos.y = pos.y + 1
 
 			if minetest.get_node(pos).name == "air" then
-				minetest.set_node(pos, {name = "multiplant:multiplant_1", param2 = 2})
+				minetest.set_node(pos, {name = "multiplant:seed_multiplant"})
 			end
 		end
 	})
