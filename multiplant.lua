@@ -29,7 +29,7 @@ if minetest.settings:get_bool("multiplant_enable_grow_on_wet_soil") ~= false the
 		nodenames = {"group:field"},
 		neighbors = {"air"},
 		interval = 50,
-		chance = 15,
+		chance = 7,
 		catch_up = false,
 
 		action = function(pos, node)
