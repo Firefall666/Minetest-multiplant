@@ -1,7 +1,7 @@
 
 	minetest.register_craft({
 	output="multiplant:seed_multiplant",
-	recipe=(
+	recipe={
 		{"default:dirt","group:leaves", "default:dirt"},
 		{"group:leaves", "default:mese_crystal", "group:leaves"},
 		{"default:dirt", "group:leaves", "default:dirt"},
